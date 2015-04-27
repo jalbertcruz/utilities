@@ -40,7 +40,7 @@ setup(
 
     packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
 
-    install_requires=['GitPython'],
+    install_requires=['GitPython', 'tornado'],
 
     extras_require={
         'dev': ['check-manifest'],
