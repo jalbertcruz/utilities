@@ -8,19 +8,18 @@
 *.exe
 *.so
 *.o
-*.xml
 *.iml
 *.zip
 *.rar
 *.7z
 *.cnf
 *.class
+*.pyc
+*.jar
 
 bin/
 out/
 libs/
 
 TODO.txt
-tests/
 dentro/
-main/
