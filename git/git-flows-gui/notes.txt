@@ -1,0 +1,47 @@
+
+        Button gs = new Button("gsync");
+
+        gs.setOnMouseClicked(event -> {
+
+            ProcessBuilder pb = new ProcessBuilder();
+
+            pb.command("python", "D:/JAlbertPrograms/bin/bash/gsync.py");
+
+            pb.directory(new File("D:/MisDocumentos/src/git-utilities-tests/tests/private-repos/app2"));
+
+            Process p1 = null;
+            try {
+                p1 = pb.start();
+                p1.waitFor();
+                System.out.println("Acabe gsync");
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+        });
+        bt.setOnMouseClicked(event -> {
+
+            ProcessBuilder pb = new ProcessBuilder();
+
+            pb.command("git", "am", "commits/0001-b.patch");
+            pb.directory(new File("D:/MisDocumentos/src/git-utilities-tests/tserver"));
+
+            try {
+                Process p1 = pb.start();
+                p1.waitFor();
+
+                System.out.println("Acabe uno");
+                pb.command("git", "am", "commits/0002-c.patch");
+
+                p1 = pb.start();
+                p1.waitFor();
+
+                System.out.println("Acabe dos");
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
