@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Prueba</title>
+
+    <!--<script src="socket.io.js"></script>-->
+    <script src="static/cdn/jquery-2.1.3.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var ws = undefined;
+
+            $("#conectar").click(function () {
+                ws = new WebSocket("ws://localhost:8000/command");
+                ws.onmessage = function (evt) {
+                    var obj = JSON.parse(evt.data)
+                    $("#ok").html(obj["ok"]);
+                    $("#error").html(obj["err"]);
+                };
+            });
+
+            $("#enviar").click(function () {
+                ws.send(JSON.stringify({
+                    "close": false,
+                    "command": "[\"git\", \"am\", \"commits/0001-b.patch\"]",
+                    "newDir": "D:/MisDocumentos/src/git-utilities-tests/tserver"
+                }));
+            });
+
+            $("#cerrar").click(function () {
+                ws.send(JSON.stringify({
+                    "close": true
+                }));
+            });
+
+        });
+    </script>
+
+</head>
+<body>
+
+<button id="conectar">Conectar</button>
+<button id="enviar">Enviar</button>
+<button id="cerrar">Shutdown</button>
+
+
+<div id="ok"></div>
+
+<div id="error" style="color: red"></div>
+
+</body>
+</html>
