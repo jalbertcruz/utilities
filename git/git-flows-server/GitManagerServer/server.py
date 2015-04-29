@@ -23,7 +23,6 @@ from tornado.options import define, options
 
 
 class TornadoGitControllerServer:
-
     class MainHandler(tornado.web.RequestHandler):
         def get(self):
             self.render(
@@ -45,7 +44,7 @@ class TornadoGitControllerServer:
                 os.chdir(new_dir)
                 cmd = eval(cmd)
                 subprocess.call(cmd, stdout=open(current_dir + "/stdout", "w"),
-                                stderr=open(current_dir + "/stderr", "w"))
+                                stderr=open(current_dir + "/stderr", "w"), shell=True)
                 ok = "\n".join(open(current_dir + "/stdout").readlines())
                 error = "\n".join(open(current_dir + "/stderr").readlines())
                 os.chdir(current_dir)
