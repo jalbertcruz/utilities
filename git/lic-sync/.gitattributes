@@ -1,0 +1,6 @@
+*.py filter=python_lic
+*.rb filter=ruby_lic
+*.js filter=js_lic
+*.java filter=java_lic
+*.clj filter=clojure_lic
+*.scala filter=scala_lic
