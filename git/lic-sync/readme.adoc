@@ -1,0 +1,3 @@
+== Licence syncronizer
+
+It's in charge of to use proper source code header: it allow to have the working dir without the licence specification.
