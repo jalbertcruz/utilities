@@ -1,0 +1,9 @@
+[core]
+     repositoryformatversion = 0
+     filemode = true
+     bare = false
+     logallrefupdates = true
+
+[filter "python_pass_cleaner"]
+     clean = python3 ~/appslnx/bin/pass-remover/wd2repo.py %f
+     smudge = python3 ~/appslnx/bin/pass-remover/repo2wd.py
