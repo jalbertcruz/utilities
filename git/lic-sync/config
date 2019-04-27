@@ -5,29 +5,29 @@
      logallrefupdates = true
 
 [filter "python_lic"]
-     smudge = "python3 ~/appslnx/bin/lic-sync/repo2wd.py ~/src/utilities/git/lic-sync/headers/agpl_header.txt"
-     clean = "python3 ~/appslnx/bin/lic-sync/wd2repo.py ~j/src/utilities/git/lic-sync/headers/agpl_header.txt '#' %f"
+     smudge = "python3 ~/appslnx/bin/lic-sync/repo2wd.py ~/src/cv/utilities/git/lic-sync/headers/agpl_header.txt"
+     clean = "python3 ~/appslnx/bin/lic-sync/wd2repo.py ~/src/cv/utilities/git/lic-sync/headers/agpl_header.txt '#' %f"
 
 [filter "clojure_lic"]
-     smudge = "python3 ~/appslnx/bin/lic-sync/repo2wd.py ~/src/utilities/git/lic-sync/headers/agpl_header.txt"
-     clean = "python3 ~/appslnx/bin/lic-sync/wd2repo.py ~j/src/utilities/git/lic-sync/headers/agpl_header.txt ';;' %f"
+     smudge = "python3 ~/appslnx/bin/lic-sync/repo2wd.py ~/src/cv/utilities/git/lic-sync/headers/agpl_header.txt"
+     clean = "python3 ~/appslnx/bin/lic-sync/wd2repo.py ~/src/cv/utilities/git/lic-sync/headers/agpl_header.txt ';;' %f"
 
 [filter "ruby_lic"]
-     smudge = "python3 ~/appslnx/bin/lic-sync/repo2wd.py ~/src/utilities/git/lic-sync/headers/agpl_header.txt"
-     clean = "python3 ~/appslnx/bin/lic-sync/wd2repo.py ~j/src/utilities/git/lic-sync/headers/agpl_header.txt '#' %f"
+     smudge = "python3 ~/appslnx/bin/lic-sync/repo2wd.py ~/src/cv/utilities/git/lic-sync/headers/agpl_header.txt"
+     clean = "python3 ~/appslnx/bin/lic-sync/wd2repo.py ~/src/cv/utilities/git/lic-sync/headers/agpl_header.txt '#' %f"
 
 [filter "java_lic"]
-     smudge = "python3 ~/appslnx/bin/lic-sync/repo2wd.py ~/src/utilities/git/lic-sync/headers/agpl_header.txt"
-     clean = "python3 ~/appslnx/bin/lic-sync/wd2repo.py ~j/src/utilities/git/lic-sync/headers/agpl_header.txt '//' %f"
+     smudge = "python3 ~/appslnx/bin/lic-sync/repo2wd.py ~/src/cv/utilities/git/lic-sync/headers/agpl_header.txt"
+     clean = "python3 ~/appslnx/bin/lic-sync/wd2repo.py ~/src/cv/utilities/git/lic-sync/headers/agpl_header.txt '//' %f"
 
 [filter "scala_lic"]
-     smudge = "python3 ~/appslnx/bin/lic-sync/repo2wd.py ~/src/utilities/git/lic-sync/headers/agpl_header.txt"
-     clean = "python3 ~/appslnx/bin/lic-sync/wd2repo.py ~j/src/utilities/git/lic-sync/headers/agpl_header.txt '//' %f"
+     smudge = "python3 ~/appslnx/bin/lic-sync/repo2wd.py ~/src/cv/utilities/git/lic-sync/headers/agpl_header.txt"
+     clean = "python3 ~/appslnx/bin/lic-sync/wd2repo.py ~/src/cv/utilities/git/lic-sync/headers/agpl_header.txt '//' %f"
 
 [filter "haskell_lic"]
-     smudge = "python3 ~/appslnx/bin/lic-sync/repo2wd.py ~/src/utilities/git/lic-sync/headers/agpl_header.txt"
-     clean = "python3 ~/appslnx/bin/lic-sync/wd2repo.py ~j/src/utilities/git/lic-sync/headers/agpl_header.txt '--' %f"
+     smudge = "python3 ~/appslnx/bin/lic-sync/repo2wd.py ~/src/cv/utilities/git/lic-sync/headers/agpl_header.txt"
+     clean = "python3 ~/appslnx/bin/lic-sync/wd2repo.py ~/src/cv/utilities/git/lic-sync/headers/agpl_header.txt '--' %f"
 
 [filter "js_lic"]
-     smudge = "python3 ~/appslnx/bin/lic-sync/repo2wd.py ~/src/utilities/git/lic-sync/headers/agpl_header.txt"
-     clean = "python3 ~/appslnx/bin/lic-sync/wd2repo.py ~j/src/utilities/git/lic-sync/headers/agpl_header.txt '//' %f"
+     smudge = "python3 ~/appslnx/bin/lic-sync/repo2wd.py ~/src/cv/utilities/git/lic-sync/headers/agpl_header.txt"
+     clean = "python3 ~/appslnx/bin/lic-sync/wd2repo.py ~/src/cv/utilities/git/lic-sync/headers/agpl_header.txt '//' %f"
